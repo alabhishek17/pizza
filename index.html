@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #foodimg {
+            display: none;
+            width: 300px;
+            height: 200px;
+            margin-bottom: 30px;
+        }
+
+        #menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px;
+            border: 2px solid green;
+            width: 50vw;
+            justify-content: center;
+            margin-left: 400px;
+            background-image: url("./menu.jpg");
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+        }
+
+        #orderbtn {
+            padding: 10px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        body {
+            /* width: 50%; */
+            /* background-image: url("https://unsplash.com/photos/person-holding-black-smartphone-taking-photo-of-pizza-1uQQrwzjKms");  */
+        }
+
+        #menu_list {
+            /* border: 2px solid blue; */
+            background-color: rgb(223, 223, 223);
+            width: 20vw;
+            height: 40vh;
+           box-shadow: 10px 20px 30px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <div id="menu_list">
+            <h1 style="margin-left: 120px;">MENU</h1>
+
+            <button id="orderbtn" style="margin-left: 120px;">orderbutton</button>
+            <div>
+                <label for="burger">Burger</label>
+                <input type="checkbox" id="burger" name="foodIteam" value="Burger">
+                <label for="pizza">Pizza</label>
+                <input type="checkbox" id="pizza" name="foodIteam" value="Pizza">
+                <label for="drink">Drinks</label>
+                <input type="checkbox" id="drink" name="foodIteam" value="Drinks">
+            </div>
+            <img id="foodimg" src="" alt="food">
+            <div id="orderID" style="color: brown;font-weight: bolder;">orderNO:
+                <span id="orderIdValue"> </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./javascript.js"></script>
+</body>
+
+</html>
